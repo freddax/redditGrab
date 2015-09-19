@@ -1,0 +1,11 @@
+<h1>My amazing saved quotes</h1>
+
+<% @my_quotes.each do |quote| %>
+  <p>
+    <%= quote.quote %>
+  </p>
+<% end %>
+
+<br>
+
+<%= link_to "all quotes", quotes_index_path %>

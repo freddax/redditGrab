@@ -1,0 +1,18 @@
+<h1> This is to show our random quote of the day </h1>
+
+<div class="quote">
+  <p class="quote-text">
+  <%= @quote["data"]["selftext"] %>
+  </p>
+</div>
+
+<hr>
+
+<%= link_to "next one", quotes_show_path %>
+
+<br>
+
+<%= link_to "save it", quotes_create_path(quotes: @quote["data"]["selftext"]), method: :post %>
+
+<br>
+<%= link_to "my saved quotes", about_my_quotes_path %>

@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'home/index'
+  get 'quotes/index'
+  get 'quotes/show'
+  post 'quotes/create'
+  get 'about/contact'
+  get 'about/my_quotes'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

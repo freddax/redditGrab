@@ -1,0 +1,11 @@
+<h1>Our amazing list of quotes from Reddit</h1>
+<p>Here we go</p>
+<% @quotes.each do |quote| %>
+    <p>
+      <%= quote["data"]["selftext"] %>
+    </p>
+<%end%>
+
+<hr>
+
+<%= link_to "one quote", quotes_show_path %>
